@@ -1,0 +1,108 @@
+.product_optical_banner {
+    display: flex;
+    img {
+      width: 50%;
+    }
+    @include pad {
+      display: none;
+    }
+  }
+  .product_optical_banner_forpad {
+    display: none;
+    img{
+        width: 50%;
+    }
+    @include pad {
+        width: 100%;
+        display: flex;
+      }
+  }
+  
+  .product_optical_list {
+    h1 {
+      font-size: $fz_1-1;
+      line-height: 1.5;
+      text-align: center;
+    }
+    h3 {
+      font-size: $fz_2;
+      text-align: center;
+      font-weight: bolder;
+    }
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    li {
+      width: 20%;
+      margin: 15px;
+      font-size: $fz_3;
+      line-height: 36px;
+      font-weight: bold;
+      padding-bottom: 75px;
+    }
+    @include pad {
+      padding-top: 50px h1 {
+        font-size: $fz_2;
+        line-height: 1.5;
+      }
+      h2 {
+        padding-bottom: 15px;
+      }
+      li {
+        width: 45%;
+        padding-bottom: 55px;
+      }
+    }
+    @include iphone {
+      ul {
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+      }
+      li {
+        width: 92%;
+      }
+      h1 {
+        font-size: $fz_4;
+        line-height: 48px;
+      }
+      h2 {
+        padding-bottom: 20px;
+      }
+    }
+    span {
+      color: $red;
+    }
+    .optical_price_and_model {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .optical_color {
+      display: flex;
+      .optical_gray {
+        width: 24px;
+        height: 24px;
+        background: $product_gray;
+        border-radius: 5px;
+        @include picture_replace_text;
+        margin-right: 8px;
+        @include iphone {
+          font-size: $fz_6;
+        }
+      }
+      .optical_red {
+        width: 24px;
+        height: 24px;
+        background: $product_red;
+        border-radius: 5px;
+        @include picture_replace_text;
+        @include iphone {
+          font-size: $fz_6;
+        }
+      }
+    }
+  }
+  

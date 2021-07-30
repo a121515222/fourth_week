@@ -1,0 +1,22 @@
+.store_location_and_common_question_title{
+    border-left: 8px solid $border_red;
+    margin-top: 96px;
+    h1{
+        font-size: $fz_1;
+        line-height: 80px;
+        padding-left: 16px;
+        color: $black;
+    }
+    @include pad{
+        border-left: 4px solid $border_red;
+        margin-top: 60px;
+    }
+    @include iphone{
+        margin-top: 36px;
+        h1{
+            font-size: $fz_3;
+            padding-left: 8px;
+            line-height: 40px;
+        }
+    }
+}

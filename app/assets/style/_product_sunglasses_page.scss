@@ -1,0 +1,118 @@
+.product_sunglasses_banner{
+    display: flex;   
+    img{
+        width: 50%;
+    }
+    @include pad{
+        display: none;
+    }
+}
+.product_sunglasses_banner_forpad{
+    display: none;
+    img{
+        width: 50%; 
+    }
+    @include pad{
+        display: flex;
+        width: 100%;
+    }
+}
+.product_sunglasses_list{
+    padding-top: 80px;
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 40px 0 160px 0;
+        li{
+            width: 33%;
+            padding: 0 15px;
+        }
+    }
+    h1{
+        font-size: $fz_1-1;
+        line-height: 1.5;
+        text-align: center;
+    }
+    h3{
+        font-size: $fz_2;
+        text-align: center;
+        text-align: center;
+    }
+    @include pad{
+    margin-bottom: 24px;
+    h1{
+        font-size: $fz_2;
+    }
+    ul{
+        justify-content: space-around;
+        li{
+            width: 48%;
+            padding-bottom: 72px;
+        }
+    }
+    }
+    @include iphone{
+        ul{
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 18px;
+            li{
+                width: 95%;
+                padding-bottom: 32px;
+            }
+        }
+    }
+}
+.sunglasses_price_and_model{
+    display: flex;
+    justify-content: space-between;
+    p{
+        font-size: $fz_3;
+        line-height: 36px;
+    }
+    span{
+        font-size: $fz_3;
+        line-height: 36px;
+        color: $red;
+    }
+    a{
+    @include picture_replace_text;
+    }
+    .sunglasses_color{
+        display: flex;
+    }
+    .sunglasses_gray{
+        width: 24px;
+        height: 24px;
+        background:$product_gray;
+        border-radius: 5px;
+        margin-right: 8px;
+    }
+    .sunglasses_red{
+        width: 24px;
+        height: 24px;
+        background: $product_red;
+        border-radius: 5px;
+    }
+    @include pad{
+        p{
+        font-size: $fz_3;
+        line-height: 30px;
+        }
+        span{
+        font-size: $fz_3;
+        line-height: 30px; 
+        }
+    }
+    @include iphone{
+        p{
+            font-size: $fz_6;
+            line-height: 30px;
+            }
+            span{
+            font-size: $fz_6;
+            line-height: 30px; 
+            }
+    }
+}

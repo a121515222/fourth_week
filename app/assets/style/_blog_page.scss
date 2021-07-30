@@ -1,0 +1,128 @@
+.blog_picture_and_content_for_iphone{
+    display: none;
+    @include iphone{
+        padding-top: 28px;
+        padding-bottom: 30px;
+        display: block;
+        li{
+            padding-bottom: 20px;
+        }
+    }
+}
+.blog_picture_and_content{
+    padding-top: 60px;
+    padding-bottom: 36px;
+    img{
+        object-fit: cover;
+    }
+    @include deskbelow{
+        height: auto;
+    }
+    @include pad{
+        padding-top: 40px;
+        padding-bottom: 44px;
+    }
+    @include iphone{
+        display: none;
+    }
+    li{
+        display: flex;
+        gap: 30px;
+        margin-bottom: 60px;
+        @include pad{
+            margin-bottom: 24px;
+        }
+    }
+    h2{
+        color: $darkred;
+        font-size: $fz_2;
+        font-weight: bolder;
+        @include pad{
+            font-size: $fz_4;
+        }
+    }
+    .blog_text_title_and_content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @include iphone{
+            h2{
+                font-size: $fz_6;
+            }
+        }
+    }
+    .subtitle_and_date{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+        @include iphone{
+            margin-bottom: 0;
+        }
+        h3{
+            font-size: $fz_4;
+            font-weight: bolder;
+            @include pad{
+                font-size: $fz_6;
+            }
+            @include iphone{
+                font-size: $fz_7;
+                line-height: 30px;
+            }
+        }
+        span{
+            color: $date_gray;
+            @include pad{
+                font-size: $fz_7;
+            }
+        }
+    }
+    
+}
+.blog_content{
+    @include pad{
+        P{
+            display: inline;
+        }
+    }
+}
+.blog_content_more_link{
+    display: none;
+    @include pad{
+        display: inline;
+        font-weight: bolder;
+        a{
+            display: inline;
+            font-size: $fz_7;
+            color: $date_gray;  
+        }
+    }
+}
+.blog_more_link{
+   align-self: flex-end;
+   a{
+    font-size: $fz_1-2;
+    line-height: 54px;
+    text-decoration: none;
+    color: $darkred;
+    &:hover{
+        color: $hoveracolor;
+    }
+   }
+   @include pad{
+    display: none;
+   }
+}
+.blog_picture{
+    @include pad{
+        width: 49%;
+    }
+    @include iphone{
+        width: 100%;
+    }
+}
+.blog_link_for_iphone{
+    @include iphone{
+        display: block;
+    }
+}

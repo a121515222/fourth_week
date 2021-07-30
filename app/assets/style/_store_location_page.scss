@@ -1,0 +1,133 @@
+.store_location_choose_location{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    @include pad{
+        margin-top: 40px;
+    }
+    @include iphone{
+        margin-top: 24px;
+    }
+    select{
+        margin-left: 20px;
+        font-size: $fz-5;
+        line-height: 26px;
+        width: 345px;
+        height: 45px;
+        @include pad{
+        font-size: $fz_6;
+        line-height: 24px;
+        width: 237px;
+        height: 45px;  
+        }
+        @include iphone{
+        }
+    }
+}
+.store_show_location_list{
+    margin-top: 32px;
+    margin-bottom: 160px;
+    display: flex;
+    flex-wrap: wrap; 
+    @include pad{
+        margin-top: 24px;
+        margin-bottom: 64px;
+    }
+    @include iphone{
+        margin-bottom: 16px;
+    }
+    li{
+        width: 33%;
+        padding: 0 15px;
+        padding-bottom: 32px;
+        @include pad{
+            width: 50%;
+        }    
+        @include iphone{
+        width: 100%;
+        padding-bottom: 16px;
+        }
+    }
+    .show_location_title{
+        padding-left: 24px;
+        line-height: 36px;
+        border-left: 1px solid $border_gray;
+        border-right: 1px solid $border_gray;
+        border-bottom: 1px solid $border_gray;
+        @include pad{
+            font-size: $fz_6;
+        }
+    }
+    .show_location_detal{
+        border-left: 1px solid $border_gray;
+        border-right: 1px solid $border_gray;
+        @include pad{
+        }
+        @include iphone{
+        padding-top: 24px;
+        }   
+        li{
+
+            display: flex;
+            width: 100%;
+            align-items: center;
+            padding: 4px 25px 0 25px;
+            @include pad{
+                width: 100%;
+            }
+            @include iphone{
+                padding-bottom: 8px;
+                p{
+                    font-size: $fz_6;
+                    padding: 8px 0;
+                }
+            }   
+        }
+        a{
+            color: $black;
+            display: inline-block;
+            &:hover{
+                color: $hoveracolor;
+            }
+        }
+    }
+    .location_icon{
+        height: 24px;
+        width: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            object-fit: contain;
+        }
+    }
+    @include iphone{
+        display: flex;
+        align-items: center;
+    }
+    .location_linker{
+        margin-top: 12px;
+        width: 100%;
+        height: 67px;
+        background: #000;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a{
+            color: $white;
+            font-size: $fz_4-1;
+            line-height: 27px;
+            text-decoration: none;
+            display: block;
+            width: 100%;
+            padding: 20px 0;
+            &:hover{
+                color: $hoveracolor;
+            }
+        }
+    }
+    @include iphone{
+        margin-top: 8px;
+    }
+}

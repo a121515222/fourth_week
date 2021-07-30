@@ -11,30 +11,30 @@
     color: $darkred;
     font-weight: bolder;
     p{
-        font-size: 36px;
+        font-size: $fz_1-2;
         line-height: 1.5;
     }
     h1{
-        font-size: 64px;
+        font-size: $fz_0;
         line-height: 1.5;
-        font-weight: bold;
+        
     }
     @include deskbelow{
         background: url("../images/glass-img/banner-sm.png")center center no-repeat;
         background-size: cover;
         p{
-            font-size: 20px;
+            font-size: $fz_4;
         }
         h1{
-            font-size: 48px;
+            font-size: $fz_1;
         }
     }
     @include pad{
         p{
-            font-size: 16px;
+            font-size: $fz_6;
         }
         h1{
-            font-size: 30px;
+            font-size: $fz_2-1;
         }
     }
 }
@@ -47,7 +47,7 @@
         font-weight: bolder;
     }
     p{
-        color: #000;
+        color: $black;
     }
     ul{
         display: flex;
@@ -117,7 +117,7 @@
             }
         }
         h2{
-            font-size: 28px;
+            font-size: $fz_2-2;
         }
     }
     @include iphone{
@@ -173,11 +173,11 @@
     background: url("../images/glass-img/bg.png")center center;
     min-height: 90vh;
     h2{
-        color: #fff;
+        color: $white;
         padding-top: 60px;
     }
     h3{
-        font-size: 72px;
+        font-size: $fz_-1;
         line-height: 108px;
         font-weight: bolder;
         color: $red;
@@ -210,11 +210,11 @@
     @include deskbelow{
         min-height: 100vh;
          h3{
-            font-size: 32px;
+            font-size: $fz_2;
             line-height: 48px;
             }
         h2{
-            padding-top: 32px;
+            padding-top: $fz_2;
         }
         ul{
             display: flex;
@@ -259,7 +259,7 @@
             flex-direction: column;
             justify-content: space-between;
             span{
-                font-size: 14px;
+                font-size: $fz_7;
                 line-height: 1.5;
                 color: $gray;
                 padding-left: 16px;
@@ -301,7 +301,7 @@
         font: 20px;
     }
     label{
-        font-size: 16px;
+        font-size: $fz_6;
         line-height: 1.5;
     }
     input{
@@ -311,8 +311,8 @@
     }
     .submit_button{
         background: $red;
-        color: #fff;
-        font-size: 16px;
+        color: $white;
+        font-size: $fz_6;
         line-height: 24px;
         width: 48%;
         border: none;
@@ -334,14 +334,14 @@
     @include pad{
         padding: 40px 0 50px 0;
         label{
-            font-size: 14px;
+            font-size: $fz_7;
         }
         textarea{
-            font-size: 14px;
+            font-size: $fz_7;
             line-height: 20px;
         }
         .submitButton{
-            font-size: 14px;
+            font-size: $fz_7;
             line-height: 20px;
             margin-top: 20px;
         }
@@ -360,7 +360,7 @@
 .contact_us input.input_width_fixed{
     width: 10px;
     @include pad{
-        font-size: 14px;
+        font-size: $fz_7;
         line-height: 20px;
     }
 }

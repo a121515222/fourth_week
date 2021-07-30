@@ -1,0 +1,102 @@
+.store_location_page_detal_and_map{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+    padding-bottom: 160px;
+    @include pad{
+        flex-direction: column;
+        padding-top: 24px;
+        padding-bottom: 96px;
+    }
+    @include iphone{
+        padding-top: 20px;
+        padding-bottom: 56px;
+    }
+    .location_detal{
+        width: 40.9%;
+        padding-right: 30px;
+        @include pad{
+            padding-right: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;   
+        }
+        @include iphone{
+            flex-direction: column;
+        }
+        .location_detal_title{
+            font-weight: bolder;
+            font-size: 24px;
+            line-height: 36px;
+            padding: 12px 0;
+            padding-left: 24px;
+            border-right: 1px solid $border_gray;
+            border-left: 1px solid $border_gray;
+            border-bottom: 1px solid $border_gray;
+            @include pad{
+                font-size: 16px;
+                line-height: 24px;
+                border-top: 1px solid $border_gray;
+                padding-left: 30px;
+            }
+            @include iphone{
+            }
+        }
+        .location_detal_next_to_map{
+            padding: 16px 0 8px 0 ;
+            border-right: 1px solid $border_gray;
+            border-left: 1px solid $border_gray;
+            border-bottom: 1px solid $border_gray;
+            @include pad{
+            }
+            @include iphone{ 
+            }
+            li{
+                display: flex;
+                padding-left: 24px;
+                padding-bottom: 8px;
+            }
+            a{
+                color: $black;
+                display: inline-block;
+                text-decoration: none;
+                &:hover{
+                    color:$hoveracolor;
+                }
+            }
+            p{
+                font-size:$fz_4 ;
+                line-height: 30px;
+                padding-left: 10px;
+                @include pad{
+                    font-size: $fz_7;
+                    line-height: 1.5;
+                }
+                @include iphone{
+                    
+                }
+            }
+        }
+    }
+    .inserMap{
+        width: 59%;
+        height: auto;
+        @include pad{
+            width: 100%;
+            padding-top: 32px;
+        }
+        @include iphone{
+            padding-top: 16px;
+        }
+    }
+    .storre_location_page_detal_picture,.storre_location_page_detal_form_group{
+        @include pad{
+            width: 48%;
+            object-fit: cover;
+        }
+        @include iphone{
+            width: 100%;
+        }
+    }  
+}
