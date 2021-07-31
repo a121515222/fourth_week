@@ -115,6 +115,9 @@ a {
   @media (max-width: 565px) {
     .container {
       width: 520px; } }
+  @media (max-width: 375px) {
+    .container {
+      width: 350px; } }
 
 .glassessLogo {
   width: 80px;
