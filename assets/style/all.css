@@ -497,6 +497,9 @@ a {
 .page_num_container {
   width: 400px;
   margin: 0 auto; }
+  @media (max-width: 375px) {
+    .page_num_container {
+      width: 300px; } }
 
 .page_num {
   margin-bottom: 160px;
