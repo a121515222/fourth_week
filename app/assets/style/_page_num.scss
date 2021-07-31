@@ -1,6 +1,9 @@
 .page_num_container{
     width: 400px;
     margin: 0 auto;
+    @include iphoneXr{
+        width: 300px;
+    }
 }
 .page_num{
     margin-bottom: 160px;
