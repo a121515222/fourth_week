@@ -11,6 +11,9 @@
     @include iphone{
         width: 520px;
     }
+    @include iphoneXr{
+        width :350px;
+    }
 }
 .glassessLogo{
     width: 80px;
